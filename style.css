@@ -599,7 +599,7 @@ h3 {
     position: relative;
 }
 /* visibility of stars on history/tourism page */
-.history-header #banner, .tourism-header #banner{
+.history-header #banner, .tourism-header #banner, .solution-header #banner{
     visibility: hidden;
 }
 /* history webpage viewport */
@@ -1300,6 +1300,15 @@ h3 {
 /*Added background image to the header and positioned it*/
 .tourism-header {
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url(img/Lantern1.jpeg);
+    min-height: 70vh;
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.solution-header {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url(img/ferret.avif);
     min-height: 70vh;
     width:100%;
     background-position: center;

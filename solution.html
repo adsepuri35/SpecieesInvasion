@@ -6,13 +6,15 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://css.gg/css?=|facebook|instagram|twitter|google" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </head> 
     <body>
-        <section class="trav-header">
-
-            <!--nav bar-->
+        <section class="solution-header">
+            <!-- Transparent nav bar + light/mars mode switch-->
             <nav>
                 <a href="index.html"><img src="img/newLogo.png" id="logo-text"></a>
                 <div class="nav-links">
@@ -32,63 +34,70 @@
                 <img src="img/clown-fish.png" id="fish-icon">
     
             </nav>
-            
-            <!--Page Title + Description-->/
+            <!--Opening text for main page-->
             <div class="text-box">
-                <h1>Lionfish</h1>
-                <p>Lionfish threaten native fish and reefs in U.S. Atlantic coastal waters.</p>
+                <h1>The Solution</h1>
             </div>
-
-            <!--Bobbing Arrow Animation-->
+            <!--Bobbing arrow animation-->
             <div class="arrow">
                 <span></span>
                 <span></span>
                 <span></span>
-          
+            </div>
+            <!--Banner for stars on the main page (present here because it serves as a workaround to a modal bug)-->
+            <div id="banner">
+                <canvas id="canvas"></canvas>
+              </div>
+        </section>
+        <!--Information about food chains-->
+        <section class="settle">
+            <h1>The Problem</h1>
+            <p>Invasive species that have already established a prescense can be difficult to control or eradicate.</p>
+
+            <!--Image of map + caption-->
+            <img src="img/scuba.jpg" class="geomap" alt="map of martian settlements/oceans">
+
+            <div class="settle-des">
+                <ul>
+                    <li>-  Talk to your local nursery when selecting plants for gardens.</li>
+                    <p></p><p>
+                    <li>-  Volunteer at species removal efforts.</li>
+                    <p></p><p>
+                    <li>-  Only fish using native bait. Identify if bait is invasive.</li>
+                    <p></p><p>
+                    <li>-  Clean your hiking and fishing gear.</li>
+
+                </ul>
             </div>
 
         </section>
 
-        <!--Travel packages boxes-->
-        <section class="trav-course">
-    
-            <div class="trav-row">
-                <div class="trav-course-col">
-                    <h3>The Problem</h3>
-                    <p></p>
-                    <ul>
-                        <li>Threaten the well-being of coral-reefs and other marine ecosystems.</li>
-                        <li>Harm commercially and recreationally important fishes that depend on them.</li>
-                        <li>Inhabit reefs, wrecks, and other habitat types in the warm marine waters of the greater Atlantic.</li>
-                    </ul>
-                    <p></p>
-                </div>
-                <div class="trav-course-col">
-                    <h3>The Causes</h3>
-                    <p></p>
-                    <ul>
-                        <li>Lionfish are native to coral reefs in the tropical waters of the South Pacific and Indian Oceans.</li>
-                        <li>Likely introduced when aquarium owners emptied unwanted pet lionfish into nearby coastal waters.</li>
-                        <li>The lionfish spread very rapidly since they have no natural predators in US waters.</li>
-                    </ul>
-                    <p></p>
-                </div>
-                <div class="trav-course-col">
-                    <h3>The Solution</h3>
-                    <p></p>
-                    <ul>
-                        <li>Hunting them in large numbers.</li>
-                        <li>They can be eaten but only after their poisonous parts are removed.</li>
-                        <li>Training sharks to eat them! Yes, this is real.</li>
-                        <li>Ban Lionfish imports.</li>
-                        <li>Have divers report lionfish sightings.</li>
-                    </ul>
-                    <p></p>
-                </div>
-                
+        <!--Bodies of Water-->
+        <section class="settle">
+            <h1>The Organizations</h1>
+
+            <!--Image of terraformed mars-->
+            <img src="img/wwf.jpg" class="watmap" alt="map of martian settlements/oceans">
+
+            <div class="settle-des">
+                <ul>
+                    <li>-  Invasive Species Council</li>
+                    <p></p><p>
+                    <li>-  U.S. Fish and Wildlife Service</li>
+                    <p></p><p>
+                    <li>-  WWF: World Wildlife Federation</li>
+                    <p></p><p>
+                    <li>-  NAISMA: North American Invasive Species Management Association</li>
+
+                </ul>
             </div>
+
+
         </section>
-        <!--Contact Links + Email-->
+
+
+        </section>
+        <!--Contact footer with links to different social media sites + email-->
         <section class="footer">
             <h4>Contact Us</h4>
     
@@ -105,20 +114,17 @@
     
             <p>Any questions? Reach out to us @ <a href="mailto: americanwildife@gmail.com" target="_blank" style="color: black">americanwildlife@gmail.com</a> </p>
         </section>
-
         <script type="text/javascript" src="js/code2.js"></script>
-
         <!--JS for light/mars mode-->
         <script>
 
             var icon = document.getElementById("mode-slider");
-    
+
             icon.onclick = function(){
                 document.body.classList.toggle("dark-theme");
-                
+            
             }
-    
+
         </script>
     </body>
-    
 </html>
